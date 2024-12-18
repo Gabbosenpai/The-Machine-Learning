@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://buuxmyyc14elk"]
+
+[ext_resource type="Script" path="res://Script/menu.gd" id="1_y4rd2"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 2.0
+offset_right = 1153.0
+offset_bottom = 648.0
+script = ExtResource("1_y4rd2")
+metadata/_edit_group_ = true
+
+[node name="Sfondo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NuovaPartita" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.5
+offset_top = -15.5
+offset_right = 57.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "Nuova partita"
+
+[node name="Opzioni" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.5
+offset_top = 102.0
+offset_right = 56.5
+offset_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "Opzioni"
+
+[connection signal="pressed" from="NuovaPartita" to="." method="nuova_partita"]
+[connection signal="pressed" from="Opzioni" to="." method="apri_opzioni"]

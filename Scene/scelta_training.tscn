@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c0diceb5ne33t"]
+
+[node name="SceltaTraining" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1153.0
+offset_bottom = 646.0
+
+[node name="Scelta1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 2.0
+offset_right = 388.0
+offset_bottom = 276.0
+text = "Dataset religioso"
+
+[node name="Scelta2" type="Button" parent="."]
+offset_left = 388.0
+offset_top = 2.0
+offset_right = 636.0
+offset_bottom = 276.0
+text = "Dataset Politico"
+
+[node name="Scelta3" type="Button" parent="."]
+offset_left = 635.0
+offset_top = 1.0
+offset_right = 883.0
+offset_bottom = 275.0
+text = "Dataset Social Media"
